@@ -1,0 +1,133 @@
+/* Mengatur margin, padding, dan box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background utama untuk form */
+.wrap-clinic {
+  width: 100%;
+  height: 120vh;
+  background-color: #eef6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Menambahkan padding untuk ruang di sekitar konten */
+}
+
+/* Styling untuk card form */
+.card {
+  border-radius: 8px;
+  /* background: #ffffff; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  /* padding: 20px; Menambahkan padding agar konten tidak terlalu rapat */
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Styling tombol */
+button {
+  cursor: pointer;
+}
+
+button.btn-light {
+  background: #e7e7e7;
+  border: none;
+}
+
+button.btn-primary {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  color: #ffffff;
+}
+
+/* Area Drag and Drop */
+.upload-area {
+  position: relative;
+  margin-bottom: 15px; /* Menambah jarak bawah untuk elemen berikutnya */
+}
+
+.drag-area {
+  border: 2px dashed #4a90e2;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Mengubah warna saat area drag berada di atas elemen */
+.drag-area:hover,
+.drag-area.drag-over {
+  background-color: #e6f7ff;
+  border-color: #4a90e2;
+}
+
+.drag-area i {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #4a90e2;
+}
+
+.drag-area span {
+  display: block;
+  font-size: 14px;
+  color: #4a90e2;
+  margin-top: 10px;
+}
+
+/* Styling untuk teks yang muncul saat file sudah terpilih */
+.drag-area .file-name {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* File Input yang disembunyikan */
+.file-input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .wrap-clinic {
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /* Mengatur ukuran area drag pada layar kecil */
+  .drag-area {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 850px) and (max-height: 650px) {
+  .wrap-clinic {
+    height: 200vh !important;
+  }
+}
+
+@media (max-width: 850px) and (max-height: 1100px) {
+  .wrap-clinic {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1100px) and (max-height: 850px) {
+  .wrap-clinic {
+    height: 90vh;
+  }
+}

@@ -1,0 +1,28 @@
+.right-input{
+    background-color: transparent !important;
+}
+.wrap-all{
+    /* background-color: transparent !important; */
+    background-color: rgba(248, 249, 250, 1) !important;
+
+    width: 100%;
+}
+
+.right-input{
+    padding: 0 2rem;
+ 
+}
+@media (max-width: 1268px) {
+    
+    .wrap-all{
+       display: none;
+       /* background-color: aqua !important; */
+    }
+    .right-input{
+
+        width: 100% !important;
+        background-color: aqua;
+    }
+  
+  }
+  

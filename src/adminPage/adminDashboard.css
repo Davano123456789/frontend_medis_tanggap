@@ -1,0 +1,35 @@
+.card1 {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 48%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card1:hover {
+    background-color: #007bff; /* Warna latar saat hover */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); /* Shadow lebih besar saat hover */
+  }
+  
+  .hover-card1 .icon {
+    color: #007bff;
+    transition: transform 0.3s;
+  }
+  
+  .hover-card1:hover .icon {
+    color: white !important;
+    transform: scale(1.1); /* Ikon sedikit membesar saat hover */
+  }
+
+  .card1:hover .card1-title, .card1:hover .card1-text{
+    color: white !important;
+  }
+  .w-100.h-100 .mb-4 .text-muted{
+    margin-left: 0px !important;
+  }
+  @media (max-width: 650px){
+    .card1{
+      width: 300px;
+    }
+  }
+ 

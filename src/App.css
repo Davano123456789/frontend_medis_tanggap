@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', serif;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+.btn-brand,
+.btn-login,
+.btn-info {
+  background-color: #0a192f;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 25px;
+  margin-left: 15px;
+  border: 0px;
+}
+
+.table.table-striped.table-bordered .btn-info{
+  margin-left: 0px;
+  border-radius: 5px;
+}
+.fas {
+  display: none;
+}
+
+#sec5::-webkit-scrollbar {
+  display: none;
+}
+
+#sec5 .wrapper {
+  /* display: flex;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transition: all 0.3s ease; */
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 1rem;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+#sec5 .wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.fas.fa-user {
+  display: inline-block;
+}
+
+/* Styling untuk Section Artikel */
+.section-5 {
+  background-color: #f9f9f9;  /* Latar belakang yang lebih terang untuk kontras */
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.section-5 h2 {
+  font-size: 2.25rem;
+  color: #0a192f;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section-5 h2 span {
+  color: #0a192f;
+}
+
+.d-flex {
+  flex-wrap: nowrap;  /* Pastikan card tetap berada dalam satu baris */
+  overflow-x: auto;   /* Aktifkan scroll horizontal */
+  -webkit-overflow-scrolling: touch;  /* Scroll lebih halus pada perangkat mobile */
+  width: 100%;  /* Pastikan kontainer memiliki lebar penuh */
+}
+
+.card {
+  width: 16rem;  /* Lebar card sedikit lebih kecil agar memberi ruang visual */
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 15px;  /* Memberikan jarak antar card */
+  display: inline-block;  /* Agar card saling berjajar */
+}
+
+.card:hover {
+  transform: translateY(-5px);  /* Efek hover card naik sedikit */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Shadow lebih tegas saat hover */
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  height: 180px;  /* Menyesuaikan tinggi gambar agar tidak terlalu besar */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #0a192f;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #082a5e;
+}
+
+/* Responsif untuk Tablet */
+@media (max-width: 1200px) {
+  .section-5 h2 {
+    font-size: 2rem;  /* Mengurangi ukuran font pada layar lebih kecil */
+  }
+
+  .card {
+    width: 14rem;  /* Lebar card sedikit lebih kecil pada layar tablet */
+  }
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 991px) {
+  .d-flex {
+    flex-wrap: nowrap;  /* Card tetap dalam satu baris walaupun pada layar kecil */
+    overflow-x: auto;  /* Menambahkan scroll horizontal jika card melebihi layar */
+  }
+
+  .card {
+    width: 100%;  /* Card akan mengambil lebar penuh kontainer */
+    min-width: 14rem;  /* Card tidak terlalu kecil pada tampilan mobile */
+    margin-right: 15px;  /* Jarak antar card */
+  }
+
+  .section-5 h2 {
+    font-size: 1.75rem;  /* Ukuran font heading lebih kecil pada tampilan mobile */
+  }
+}
+
+.btn-sec3 {
+  background-color: #0a192f;
+  padding: 5px 25px;
+}
+
+.btn-brand:hover,
+.btn-sec3:hover,
+.btn-login:hover,
+.btn-info:hover {
+  background-color: #153564;
+  color: white;
+}
+
+section h1 {
+  font-size: 60px;
+}
+
+section h1 span {
+  color: #174ab5;
+}
+
+section button #btn {
+  text-align: center;
+  background-color: #52bfd7;
+  padding: 5px 2px;
+  border-radius: 100%;
+}
+
+#sec2 .container #li {
+  padding: 5px;
+  background-color: #52bfd7;
+  border-radius: 100%;
+}
+
+#sec2 .container ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  left: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+#sec5 .card {
+  flex: 0 0 calc(33.33% - 2rem);
+  max-width: calc(33.33% - 2rem);
+  box-sizing: border-box;
+}
+
+.artikel-tagline {
+  height: 90px;
+  background-color: #0a192f;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.artikel-img {
+  width: 498px;
+  height: 331px;
+  border-radius: 20px;
+}
+
+.artikel-profil {
+  width: 38px;
+  height: 38px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.artikel-username {
+  margin-left: 10px;
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.hari {
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.artikel-mini-img {
+  width: 252px;
+  height: 201px;
+  border-radius: 20px;
+}
+
+.artikel-mini-profil {
+  margin-top: 18px;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.artikel-mini-username {
+  margin-left: 20px;
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+.artikel-mini-hari {
+  margin-left: 20px;
+  margin-top: -7px;
+  font-size: 13px;
+}
+
+.artikel-detail-img {
+  width: 672px;
+  height: 427px;
+  border-radius: 20px;
+}
+
+.artikel-detail-profil {
+  width: 38px;
+  height: 38px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.artikel-detail-username {
+  margin-left: 10px;
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.artikel-detail-hari {
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.img-arrow {
+  width: 20px;
+}
+
+.img-arrow1 {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.img-circle {
+  margin-left: 8px;
+}
+
+.section-artikel-detail {
+  background-color: #e2e2e2a1;
+  border-radius: 20px;
+  padding: 5px 30px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.section-artikel-detail1 {
+  padding: 5px 30px;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  padding-left: 15px;
+}
+
+.nav-item .nav-link.active {
+  color: #0a192f;
+  font-weight: bold;
+}
+
+@media (max-width: 950px) {
+  .fas {
+    display: inline-block;
+    min-width: 20px;
+  }
+
+  /* Navbar */
+  .navbar-toggler {
+    display: block;
+  }
+
+  #sec5 .card {
+    flex: 0 0 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+    box-sizing: border-box;
+  }
+
+  /* Navbar Collapse */
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    position: fixed;
+    right: 0;
+    top: 66px;
+    width: 200px;
+    height: 255px;
+    border-radius: 5px;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  .nav-item .nav-link.active {
+    text-decoration: none;
+    color: #0a192f;
+    font-weight: bold;
+    background-color: #1535644d;
+    border: medium;
+    padding: 10px 0px;
+    border-radius: 4px;
+    width: 200px;
+    transition: background-color 0.3s;
+    padding-left: 15px;
+  }
+
+  .btn-login {
+    width: 165px;
+    color: white;
+    padding: 4px 16px;
+    margin-top: 5px;
+  }
+}
+/* Responsive styles */
+@media (max-width: 650px) {
+  /* General sections */
+  #sec1,
+  #sec2,
+  #sec3,
+  #sec4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #sec5 .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+  }
+
+  #sec5 .cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+  }
+
+  #sec5 .cards-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Card layout adjustments */
+  #sec5 .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 15px;
+    box-sizing: border-box;
+  }
+
+  #sec5::-webkit-scrollbar {
+    display: none;
+  }
+
+  #sec1 .container,
+  #sec2 .container,
+  #sec3 .container,
+  #sec4 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #sec1 .container .gbr img,
+  #sec2 .container .gbr img,
+  #sec3 .container .gbr img,
+  #sec4 .container .gbr img {
+    width: 100%;
+    height: auto;
+  }
+
+  section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-collapse {
+    width: 180px;
+  }
+
+  .btn-login {
+    width: 150px !important;
+  }
+
+  .btn-brand,
+  .btn-sec3 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #sec2 .container ul li {
+    text-align: left;
+  }
+
+  #sec4 .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  #sec4 .container .col-md-7,
+  #sec4 .container .col-md-5 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #sec4 .container .col-md-5 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ukuran font untuk sec4 */
+  #sec4 section h1 {
+    font-size: 28px; /* Ukuran font h1 lebih kecil */
+  }
+
+  #sec4 section p {
+    font-size: 16px; /* Ukuran font paragraf lebih kecil */
+  }
+}
+
+.image-home{
+margin-left: 75px;
+}
+.section-1{
+padding: 3rem;
+}
+.section-2{
+padding: 3rem;
+}
+.section-3{
+padding: 3rem;
+}
+.section-4{
+padding: 3rem;
+}
+
+.section-5{
+  padding: 3rem;
+}
+.navbar-nav-fitur{
+  /* background-color: #52bfd7; */
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Untuk tablet dengan orientasi apa pun */
+@media  (max-width: 1024px) {
+  
+  .img-arrow1{
+    width: 20px !important;
+  }
+  
+
+}
+@media  (max-width: 724px) {
+  
+  .navbar-nav-fitur{
+    /* background-color: #52bfd7; */
+    width: 100%;
+
+    margin-top: 2rem;
+  }
+  .navbar-nav-fitur li{
+    font-size: 12px;
+  }
+  .image-home{
+  text-align: center;
+/* background-color: #52bfd7;   */
+margin: auto;
+margin-left: 0;
+}
+.img-arrow1{
+  width: 20px !important;
+}
+.section-1{
+  padding: 2rem 1rem !important;
+  }
+.section-2{
+  padding: 2rem 0 !important;
+  }
+.section-3{
+  padding: 2rem 1rem !important;
+  }
+.section-4{
+  padding: 2rem 1rem !important ;
+  }
+.section-5{
+  padding: 0 !important ;
+  }
+  .list-unstyled{
+    font-size: 14px;
+  }
+  .navbar-nav-fitur{
+
+padding-left: 2rem;
+  }
+  .section-image-1{
+    padding: 0 2rem;
+  }
+}

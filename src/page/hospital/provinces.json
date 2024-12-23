@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "name": "Aceh",
+    "imageUrl": "images/aceh.png"
+  },
+    {
+      "id": 2,
+      "name": "Sumatera Utara",
+      "imageUrl": "images/sumateraUtara.png"
+    },
+    {
+      "id": 3,
+      "name": "Sumatera Barat",
+      "imageUrl": "images/sumateraBarat.png"
+    },
+    {
+      "id": 4,
+      "name": "Riau",
+      "imageUrl": "images/riau.png"
+    },
+    {
+      "id": 5,
+      "name": "Jambi",
+      "imageUrl": "images/jambi.png"
+    },
+    {
+      "id": 6,
+      "name": "Sumatera Selatan",
+      "imageUrl": "images/sumateraSelatan.png"
+    },
+    {
+      "id": 7,
+      "name": "Bengkulu",
+      "imageUrl": "images/bengkulu.png"
+    },
+    {
+      "id": 8,
+      "name": "Lampung",
+      "imageUrl": "images/lampung.png"
+    },
+    {
+      "id": 9,
+      "name": "Kepulauan Bangka Belitung",
+      "imageUrl": "images/bangkaBelitung.png"
+    },
+    {
+      "id": 10,
+      "name": "Kepulauan Riau",
+      "imageUrl": "images/kepulauanRiau.png"
+    },
+    {
+      "id": 11,
+      "name": "DKI Jakarta",
+      "imageUrl": "images/DKIJakarta.png"
+    },
+    {
+      "id": 12,
+      "name": "Jawa Barat",
+      "imageUrl": "images/jawaBarat.png"
+    },
+    {
+      "id": 13,
+      "name": "Jawa Tengah",
+      "imageUrl": "images/jawaTengah.png"
+    },
+    {
+      "id": 14,
+      "name": "DI Yogyakarta",
+      "imageUrl": "images/yogyakarta.png"
+    },
+    {
+      "id": 15,
+      "name": "Jawa Timur",
+      "imageUrl": "images/jawaTimur.png"
+    },
+    {
+      "id": 16,
+      "name": "Banten",
+      "imageUrl": "images/banten.png"
+    },
+    {
+      "id": 17,
+      "name": "Bali",
+      "imageUrl": "images/bali.png"
+    },
+    {
+      "id": 18,
+      "name": "Nusa Tenggara Barat",
+      "imageUrl": "images/nusaTenggaraBarat.png"
+    },
+    {
+      "id": 19,
+      "name": "Nusa Tenggara Timur",
+      "imageUrl": "images/nusaTenggaraTimur.png"
+    },
+    {
+      "id": 20,
+      "name": "Kalimantan Barat",
+      "imageUrl": "images/kalimantanBarat.png"
+    },
+    {
+      "id": 21,
+      "name": "Kalimantan Tengah",
+      "imageUrl": "images/kalimantanTengah.png"
+    },
+    {
+      "id": 22,
+      "name": "Kalimantan Selatan",
+      "imageUrl": "images/kalimantanSelatan.png"
+    },
+    {
+      "id": 23,
+      "name": "Kalimantan Timur",
+      "imageUrl": "images/kalimantanTimur.png"
+    },
+    {
+      "id": 24,
+      "name": "Kalimantan Utara",
+      "imageUrl": "images/kalimantanUtara.png"
+    },
+    {
+      "id": 25,
+      "name": "Sulawesi Utara",
+      "imageUrl": "images/sulawesiUtara.png"
+    },
+    {
+      "id": 26,
+      "name": "Sulawesi Tengah",
+      "imageUrl": "images/sulawesiTengah.png"
+    },
+    {
+      "id": 27,
+      "name": "Sulawesi Selatan",
+      "imageUrl": "images/sulawesiSelatan.png"
+    },
+    {
+      "id": 28,
+      "name": "Sulawesi Tenggara",
+      "imageUrl": "images/sulawesiTenggara.png"
+    },
+    {
+      "id": 29,
+      "name": "Gorontalo",
+      "imageUrl": "images/gorontalo.png"
+    },
+    {
+      "id": 30,
+      "name": "Sulawesi Barat",
+      "imageUrl": "images/sulawesiBarat.png"
+    },
+    {
+      "id": 31,
+      "name": "Maluku",
+      "imageUrl": "images/maluku.png"
+    },
+    {
+      "id": 32,
+      "name": "Maluku Utara",
+      "imageUrl": "images/malukuUtara.png"
+    },
+    {
+      "id": 33,
+      "name": "Papua Barat",
+      "imageUrl": "images/papuaBarat.png"
+    },
+    {
+      "id": 34,
+      "name": "Papua",
+      "imageUrl": "images/papua.png"
+    }
+  ]
+  

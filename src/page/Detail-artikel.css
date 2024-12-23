@@ -1,0 +1,184 @@
+.wrap-card{
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 20px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.wrap-card .img-fluid{
+  width: 100%;
+  height: 120px !important;
+}
+
+.wrap-card .card-title {
+  display: -webkit-box;               /* Menggunakan flexbox untuk pengaturan kolom vertikal */
+  -webkit-box-orient: vertical;       /* Menyusun konten dalam kolom */
+  overflow: hidden;                   /* Menyembunyikan teks yang melebihi batas */
+  -webkit-line-clamp: 3;              /* Membatasi hanya 3 baris teks */
+  text-overflow: ellipsis;            /* Menambahkan tiga titik (...) saat teks terpotong */
+  white-space: normal;                /* Memungkinkan teks untuk membungkus ke baris baru */
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.card:hover{
+  box-shadow: none;
+  border: none;
+}
+.artikel-profil img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.img-list img{
+  border-radius: 10px;
+}
+.card-text img{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: -10px !important;
+  margin-right: 15px;
+}
+.ql-editor.article-content img{
+  width: 750px; /* Ukuran gambar sedikit lebih kecil di layar ponsel */
+  border-radius: 10px;
+}
+.ql-editor.article-content p,
+.ql-editor.article-content h1, 
+.ql-editor.article-content h2, 
+.ql-editor.article-content h3, 
+.ql-editor.article-content h4, 
+.ql-editor.article-content h5,
+.ql-editor.article-content h6{
+  max-width: 750px;
+}
+.wrap-right{
+  padding-right: 2rem;
+}
+.article-all h5 {
+color: black;
+}
+.side-artikel{
+  margin-top: 18px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+.text-muted.nama{
+  font-weight: bold;
+  margin-left: 17px;
+}
+.text-muted.hari{
+  margin-top: -20px;
+  margin-left: 58px;
+}
+.card-body .detail-username{
+  margin-left: 50px;
+  margin-top: -42px;
+  display: block; /* Menambahkan display block */
+}
+.card-body .text-muted1{
+  margin-left: 43px;
+  margin-top: -56px !important;
+  font-size: medium;
+  display: block; /* Menambahkan display block */
+}
+.card-body .text-muted{
+  margin-left: 43px;
+  margin-top: -17px;
+  font-size: small;
+  display: block; /* Menambahkan display block */
+}
+.card-text.title{
+  margin-top: 10px;
+  margin-left: -5px;
+  font-size: medium;
+  display: -webkit-box; /* Untuk mendukung browser berbasis WebKit */
+  -webkit-line-clamp: 3; /* Maksimal 3 baris */
+  -webkit-box-orient: vertical; /* Orientasi vertikal */
+  overflow: hidden; /* Sembunyikan teks yang melebihi batas */
+  text-overflow: ellipsis; /* Tambahkan tiga titik (...) di akhir */
+  line-height: 1.5; /* Mengatur jarak antar baris */
+  max-height: 4.5em; /* Batas tinggi untuk 3 baris dengan line-height 1.5em */
+}
+
+@media (max-width: 1200px) {
+  .ql-editor.article-content img {
+    max-width: 100%; /* Ukuran gambar sedikit lebih kecil di layar ponsel */
+    height: auto;
+  }
+}
+@media (max-width: 950px) {
+  .ql-editor.article-content img {
+    max-width: 100%; /* Ukuran gambar sedikit lebih kecil di layar ponsel */
+    height: auto;
+  }
+  .card-body .card-title{
+    font-size: 15px;
+    font-weight: bold;
+    -webkit-line-clamp: 2;
+  }
+  .wrap-card{
+    height: 455px;
+  }
+  .wrap-card .img-fluid{
+    width: 100%;
+    height: 300px !important;
+  }
+  .ql-editor.article-content h1, 
+  .ql-editor.article-content h2, 
+  .ql-editor.article-content h3, 
+  .ql-editor.article-content h4, 
+  .ql-editor.article-content h5,
+  .ql-editor.article-content h6{
+    font-size: large;
+    font-weight: bold;
+  }
+  .ql-editor.article-content p{
+    font-size: medium;
+  }
+}
+
+@media (max-width: 768px) { /* Untuk layar dengan lebar hingga 768px */
+  .ql-editor.article-content img {
+    max-width: 100%; /* Ukuran gambar sedikit lebih kecil di layar ponsel */
+    height: auto;
+  }
+  .wrap-right{
+    padding-right: 0;
+  }
+  .side-artikel{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .ql-editor.article-content h1, 
+  .ql-editor.article-content h2, 
+  .ql-editor.article-content h3, 
+  .ql-editor.article-content h4, 
+  .ql-editor.article-content h5,
+  .ql-editor.article-content h6{
+    font-size: medium;
+    font-weight: bold;
+  }
+  .ql-editor.article-content p{
+    font-size: small;
+  }
+  .card-body .card-title{
+    font-size: 13px;
+  }
+  .wrap-card{
+    height: 380px;
+  }
+  .wrap-card .img-fluid{
+    width: 100%;
+    height: 200px !important;
+  }
+}

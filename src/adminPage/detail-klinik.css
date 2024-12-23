@@ -1,0 +1,64 @@
+.card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.card-body {
+  padding-block: 10px;
+  /* padding: 20px;  */
+  overflow-x: auto;
+}
+
+.table2 {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+.table2 td {
+  white-space: nowrap;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.table2 th {
+  text-align: left;
+  padding: 10px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+textarea,
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .table2 td,
+  .table2 th {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .end-0 {
+    right: 100px;
+  }
+}

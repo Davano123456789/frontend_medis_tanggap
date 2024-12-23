@@ -1,0 +1,505 @@
+/* Container utama */
+.province-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Judul */
+.province-container h1 {
+  color: #0a192f;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Grid Card */
+.province-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Jarak antar elemen */
+  justify-content: center; /* Elemen rata tengah */
+}
+
+.province-card {
+  flex: 0 0 calc(25% - 20px); /* Tiga kolom */
+  max-width: calc(25% - 20px); /* Hindari kartu meluas */
+  box-sizing: border-box;
+  padding: 15px; /* Tambahkan ruang dalam */
+  border: 1px solid #ccc; /* Opsional: gaya border */
+  border-radius: 8px; /* Opsional: sudut melengkung */
+}
+
+@media (max-width: 768px) {
+  .province-card {
+    flex: 0 0 100%; /* Satu kolom di layar kecil */
+    max-width: 100%;
+  }
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh; /* Sesuaikan tinggi agar tampil di tengah */
+  font-size: 1.5rem;
+}
+
+/* Style untuk kolom pencarian dengan ikon di kiri */
+.province-container .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 30px; 
+  border: 1px solid #ccc; 
+  overflow: hidden; 
+}
+
+/* Style untuk kolom pencarian dengan ikon di kiri */
+.province-container .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 30px; 
+  border: 1px solid #ccc; 
+  overflow: hidden; 
+  width: 80%; 
+  max-width: 500px; 
+  margin: 0 auto; 
+}
+
+/* Style untuk input */
+.province-container .input-group .form-control {
+  width: 100%;
+  padding: 10px 20px; 
+  font-size: 1rem;
+  border: none; 
+  border-radius: 30px; 
+  padding-left: 40px;
+  z-index: 1; 
+}
+
+/* Posisi ikon di sebelah kiri input */
+.province-container .input-group .input-icon {
+  position: absolute;
+  left: 15px; 
+  font-size: 1.2rem; 
+  color: #000000; 
+  z-index: 2; 
+}
+
+/* Style untuk ikon pencarian */
+.province-container .input-group .icon {
+  font-size: 1.2rem;
+}
+
+/* Style untuk loading spinner */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0a192f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Style untuk error message */
+.error-container {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {  /*tablet */
+  .province-container .input-group .form-control {
+    max-width: 100%;
+  }
+}
+
+
+
+/* Card styling */
+.province-card {
+  background-color: #ffffff;
+  border: 2px solid #0a192f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 15px;
+}
+
+.province-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Gambar pada Card */
+.province-image {
+  width: 50%; /* Ukuran gambar diperkecil 80% dari ukuran aslinya */
+  height: auto; /* Menjaga proporsi gambar */
+  margin-bottom: 10px; /* Menambahkan jarak bawah gambar */
+  object-fit: cover; /* Menjaga gambar tetap proporsional dalam kontainer */
+}
+
+/* Untuk ukuran laptop (layar lebar 1024px ke atas) */
+@media (max-width: 1024px) {
+  .province-image {
+    width: 70%;
+    height: 270px; /* Tinggi gambar lebih kecil untuk HP */
+    padding-bottom: 1rem;
+  }
+}
+
+/* Untuk ukuran HP (layar lebar maksimal 768px) */
+@media (max-width: 768px) {
+  .province-image {
+    width: 85%;
+    height: 270px; /* Tinggi gambar lebih kecil untuk HP */
+  }
+}
+
+/* Nama Provinsi */
+.province-card h3 {
+  color: #0a192f;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+/* Tombol */
+.province-card button {
+  background-color: #0a192f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.province-card button:hover {
+  background-color: #0056b3;
+}
+/* Container Styling */
+.city-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  padding-bottom: 25rem;
+  max-width: 1200px;
+  /* background-color: #f9f9f9; */
+}
+
+/* Heading Style */
+.city-container h1 {
+  font-size: 1.8rem;
+  color: #0a192f;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Card Grid */
+.city-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 1.5rem; /* Spasi antar card */
+  width: 100%;
+}
+
+/* Individual Card */
+.city-card {
+  background-color: #ffffff;
+  border: 2px solid #0a192f; /* Border biru */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Shadow biru */
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.city-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4); /* Shadow lebih gelap saat hover */
+  border-color: #0056b3;
+}
+
+/* City Name */
+.city-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Button Style */
+.city-card button {
+  background-color: #0a192f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.city-card button:hover {
+  background-color: #0056b3; /* Biru lebih gelap */
+}
+
+/* hospital */
+/* Gaya untuk Tabel */
+.wrap-hopital {
+  height: auto;
+  padding: 2rem;
+  padding-bottom: 27rem;
+}
+.title-hospital {
+  text-align: center;
+  color: #0a192f;
+}
+.hospital-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.no-hospital-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Menempatkan pesan di tengah bagian layar */
+  font-size: 1.2rem;
+  color: #333; /* Gaya teks */
+  text-align: center;
+  font-weight: 500;
+}
+
+.hospital-table th,
+.hospital-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.hospital-table th {
+  background-color: #0a192f; /* Biru */
+  color: white;
+}
+
+.hospital-table tr:nth-child(even) {
+  background-color: #f5fbff; /* Warna baris genap */
+}
+
+.hospital-table tr:hover {
+  background-color: #d8f0ff; /* Warna ketika hover */
+}
+
+/* Tombol Pilih */
+.btn-action {
+  background-color: #0a192f; /* Biru */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-action:hover {
+  background-color: #0056b3; /* Biru lebih gelap saat hover */
+}
+/* bad */
+/* Gaya untuk Tabel Kapasitas Kasur */
+.wrap-bed {
+  padding: 2rem;
+}
+.bed-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  table-layout: fixed; /* Menjaga lebar kolom agar konsisten */
+}
+
+.bed-table th,
+.bed-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.bed-table th {
+  background-color: #0a192f; /* Biru */
+  color: white;
+}
+
+.bed-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Warna baris genap */
+}
+
+.bed-table tr:hover {
+  background-color: #ddd; /* Warna ketika hover */
+}
+.title-bed {
+  text-align: center;
+  color: #0a192f;
+}
+
+/* Responsif untuk layar lebih kecil dari 768px */
+@media (max-width: 768px) {
+  /* .wrap-bed{
+        padding: 0rem;
+    }   */
+  .bed-table {
+    width: 100%;
+    display: block;
+    overflow-x: auto; /* Membuat tabel scrollable pada layar kecil */
+  }
+
+  .bed-table th,
+  .bed-table td {
+    white-space: nowrap; /* Mencegah teks memecah pada baris */
+    font-size: 12px; /* Mengurangi ukuran font agar lebih sesuai di layar kecil */
+  }
+
+  .bed-table th {
+    font-size: 14px; /* Ukuran font untuk header sedikit lebih besar */
+  }
+
+  .bed-table td {
+    font-size: 12px; /* Ukuran font untuk sel data lebih kecil */
+  }
+
+  /* Gaya untuk tombol aksi pada sel */
+  .btn-action {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+/* bad */
+/* Responsif - Gaya untuk tabel pada layar kecil */
+@media (max-width: 768px) {
+  .hospital-table {
+    width: 100%;
+    display: block;
+    overflow-x: auto; /* Membuat tabel scrollable pada layar kecil */
+  }
+
+  .hospital-table th,
+  .hospital-table td {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .hospital-table th {
+    font-size: 14px;
+  }
+
+  .hospital-table td {
+    font-size: 12px;
+  }
+
+  .btn-action {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+/* hospital */
+
+/* Loading Spinner Styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #0a192f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.loading-container p {
+  color: #0a192f;
+  font-size: 1.1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .city-cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .city-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .city-cards {
+    grid-template-columns: 1fr; /* 1 kolom */
+  }
+}
+
+/* Responsif */
+@media (max-width: 850px) {
+  .province-card{
+    flex: 0 0 calc(100% - 20px); /* Tiga kolom */
+    max-width: 290px; /* Hindari kartu meluas */
+    max-height: auto;
+  }
+  .province-image{
+    width: 100%;
+  }
+  .province-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .province-card{
+    flex: 0 0 calc(100% - 20px); /* Tiga kolom */
+    max-width: 290px; /* Hindari kartu meluas */
+    max-height: auto;
+  }
+}

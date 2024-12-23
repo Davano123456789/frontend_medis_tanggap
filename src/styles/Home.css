@@ -1,0 +1,23 @@
+.article-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .article-container {
+    padding: 0.5rem !important;
+  }
+
+  .article-container .card {
+    width: calc(100vw - 3rem) !important;
+    min-width: calc(100vw - 3rem) !important;
+  }
+
+  .section-5 {
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  .section-5 .container {
+    overflow: hidden;
+  }
+}

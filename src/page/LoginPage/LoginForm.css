@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.bg-kiri {
+  background-color: #0a192f;
+}
+
+.button-color {
+  background-color: #0a192f;
+}
+
+.button-color:hover {
+  background-color: #122c53;
+}
+
+button {
+  border-radius: 8px;
+}
+
+.form-control {
+  border-radius: 8px;
+}
+
+.text-custom-color {
+  color: #0a192f;
+}
+
+.text-custom-color-kiri {
+  color: #52bfd7;
+}
+
+.card-responsive2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text-muted1 {
+  display: none;
+}
+
+.h1-responsive {
+  display: none;
+}
+.btn-info2 {
+  background-color: #49aac0;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 25px;
+  margin-left: 15px;
+  border: 0px;
+}
+.btn-info2:hover{
+  background-color: #3c8c9e;
+}
+
+@media (max-width: 650px) {
+  .bg-kiri h1 {
+    display: none;
+    width: 0px;
+  }
+
+  .bg-kiri.w-50 {
+    width: 0px !important;
+  }
+
+  .h1-responsive {
+    display: block;
+    font-weight: 800 !important;
+  }
+
+  .bg-kanan1.w-50 {
+    width: 100% !important;
+    background-color: #0a192f;
+  }
+
+  .btn.btn-info2 {
+    display: none;
+  }
+
+  .text-custom-color {
+    color: white;
+    font-weight: 800 !important;
+    font-size: 30px !important;
+  }
+
+  .text-custom-color1 {
+    color: #222a9d;
+  }
+
+  .w-75 {
+    width: 300px !important;
+  }
+
+  .text-muted1 {
+    font-size: 14px;
+    display: block;
+  }
+
+  .card-responsive2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 280px; /* Sesuaikan tinggi sesuai kebutuhan */
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .eye-responsive {
+    position: absolute !important; /* Agar dapat diatur posisinya relatif terhadap parent */
+    top: 50% !important; /* Atur posisi vertikal */
+    right: -130px !important; /* Atur jarak dari kanan */
+    cursor: pointer !important; /* Menambahkan kursor pointer untuk interaksi */
+  }
+}

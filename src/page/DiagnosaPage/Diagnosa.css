@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap-diagnosa{
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+}
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/bg-diagnosa.jpg');
+    height: 148vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Container utama untuk tampilan responsif */
+.wrap-output {
+    margin-top: 5rem;
+    border-radius: 1rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+  }
+  
+  /* Gaya untuk label checkbox */
+  .checkbox-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Warna default */
+    border: 2px solid #007bff;
+    border-radius: 2rem;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  
+  .checkbox-btn span{
+    padding: 20px;
+  }
+  /* Sembunyikan checkbox asli */
+  .checkbox-btn input {
+    display: none;
+  }
+  
+  /* Teks di dalam tombol */
+  .checkbox-btn span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff; /* Warna teks default */
+    transition: color 0.3s;
+  }
+  
+  /* Efek saat checkbox dipilih */
+  .checkbox-btn input:checked + span {
+    background-color: #007bff; /* Latar belakang biru */
+    color: white; /* Warna teks putih */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+  }
+  
+  /* Efek hover */
+  .checkbox-btn:hover {
+    box-shadow: rgba(0, 123, 255, 0.5) 0px 5px 15px; /* Bayangan saat hover */
+  }
+  
+  /* Tombol Diagnosa */
+  button.btn-diagnosa {
+    background-color: #17a2b8; /* Warna biru muda */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Hover pada tombol diagnosa */
+  button.btn-diagnosa:hover {
+    background-color: #138496; /* Warna biru lebih gelap */
+    transform: scale(1.05); /* Perbesar sedikit saat hover */
+  }
+ .wrap-output {
+  position: relative;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparan putih */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Agar spinner berada di atas konten */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Pastikan konten di bawah spinner */
+}
+.col-md-4-1 {
+  flex: 0 0 33%; /* Setel lebar kolom menjadi 33% */
+  max-width: 33%; /* Pastikan ukuran maksimal juga 50% */
+}
+  
+  /* Untuk layar kecil (ponsel) */
+@media (max-width: 576px) { /* Bootstrap breakpoint untuk layar kecil */
+    .title-output {
+      font-size: 1.2rem; /* Ukuran lebih kecil */
+    }
+    .wrap-output {
+      margin-top: -10;
+      border-radius: 1rem;
+      width: 100%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 2rem;
+    }
+    .bg-image {
+      height: 255vh !important;
+    }
+    .col-md-4-1 {
+      flex: 0 0 100% !important; /* Setel lebar kolom menjadi 50% */
+      max-width: 100% !important; /* Pastikan ukuran maksimal juga 50% */
+    }
+    .checkbox-btn span{
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 950px) and (max-height: 650px) {
+    .checkbox-btn span{
+      font-size: 0.8rem;
+    }
+
+    .bg-image {
+      height: 330vh !important;
+    }
+    .col-md-4-1 {
+      flex: 0 0 50% !important; /* Setel lebar kolom menjadi 50% */
+      max-width: 50% !important; /* Pastikan ukuran maksimal juga 50% */
+    }
+  }
+
+  @media (max-width: 900px) and (max-height: 1200px) {
+    .bg-image {
+      height: 115vh;
+    }
+    .col-md-4-1 {
+      flex: 0 0 50%; /* Setel lebar kolom menjadi 50% */
+      max-width: 50%; /* Pastikan ukuran maksimal juga 50% */
+    }
+    .checkbox-btn span{
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 1200px) and (max-height: 900px){
+    .bg-image {
+      height: 120vh;
+    }
+    .checkbox-btn span{
+      font-size: 0.9rem;
+    }
+  }

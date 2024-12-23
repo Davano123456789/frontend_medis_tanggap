@@ -1,0 +1,57 @@
+.header{
+    background-color: #1800B0;
+    color: white;
+}
+
+#rs button{
+    background-color: #1800B0;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+  }
+  .card {
+    width: 18rem;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box; 
+  }
+
+a{
+    text-decoration: none;
+}
+
+.rs div{
+    flex-direction: column;
+    padding: 40px;
+}
+
+#detailrs button{
+    border: black solid 2px;
+}
+
+#detailrs button:hover{
+    background-color: #ddd;
+}
+
+#kamar main{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 75vh; 
+    gap: 15px;
+}
+
+main section{
+    background-color: #B4B9FF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main section .box{
+    background-color: #8991FF;
+}

@@ -1,0 +1,24 @@
+.custom-vh {
+  height: auto;
+}
+
+main {
+  overflow-x: auto; /* Tambahkan scroll horizontal */
+  max-width: 100%;
+}
+
+.sidebar-open main {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar-closed main {
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+@media (min-width: 950px) {
+  .custom-vh {
+    height: 100vh;
+  }
+}

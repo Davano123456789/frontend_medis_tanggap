@@ -1,0 +1,21 @@
+.container-fluid.mt-4.flex-grow-1.right-input{
+    margin-left: -850px;
+}
+
+@media (max-width: 1200px){
+    .container-fluid.mt-4.flex-grow-1.right-input{
+        margin-left: -540px;
+    }
+}
+
+@media (max-width: 950px){
+    .container-fluid.mt-4.flex-grow-1.right-input{
+        margin-left: -740px;
+    }
+}
+
+@media (max-width: 650px){
+    .container-fluid.mt-4.flex-grow-1.right-input{
+        margin-left: 0px;
+    }
+}
